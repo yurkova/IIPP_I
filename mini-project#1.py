@@ -49,11 +49,11 @@ def rpsls(player_choice):
     """
     import random
     print ""
-    print "Player choses", player_choice
+    print "Player chooses", player_choice
     player_number = name_to_number(player_choice)
     comp_number = random.randrange(0, 5)
     comp_choice = number_to_name(comp_number) 
-    print "Computer choses", comp_choice
+    print "Computer chooses", comp_choice
     difference = (comp_number - player_number) % 5
     if(difference == 1 or difference == 2):
         print "Computer wins!"
